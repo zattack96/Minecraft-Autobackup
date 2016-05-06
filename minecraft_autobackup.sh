@@ -28,7 +28,7 @@ PROPFILE="server.properties"
 CRONJOB=1
 
 # When an error occurs it will send it to this e-mail
-MAILTO="zrjones12@gmail.com"
+MAILTO="mail#example.com"
 
 # Update every 'n' Minutes
 UPDATEMINS=120
