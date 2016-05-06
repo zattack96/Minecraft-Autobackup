@@ -28,10 +28,10 @@ PROPFILE="server.properties"
 CRONJOB=1
 
 # When an error occurs it will send it to this e-mail
-MAILTO="mail@adress.com"
+MAILTO="zrjones12@gmail.com"
 
 # Update every 'n' Minutes
-UPDATEMINS=60
+UPDATEMINS=120
 
 # Delete backups older than 'n' DAYS
 OLDBACKUPS=7
@@ -134,12 +134,12 @@ then
    echo "$(date +"%G-%m-%d %H:%M:%S") [LOG] Level-Name is $WORLD"
 fi
 
-BFILE="$WORLD.$STAMP.tar.gz"
-CMD="tar -czf $FINALDIR/$BFILE $WORLD"
-BFILEN="${WORLD}_nether.$STAMP.tar.gz"
-CMDN="tar -czf $FINALDIR/$BFILEN ${WORLD}_nether"
-BFILEE="${WORLD}_the_end.$STAMP.tar.gz"
-CMDE="tar -czf $FINALDIR/$BFILEE ${WORLD}_the_end"
+BFILE="$WORLD.$STAMP.tar.bz2"
+CMD="tar -cfj $FINALDIR/$BFILE $WORLD"
+BFILEN="${WORLD}_nether.$STAMP.tar.bz2"
+CMDN="tar -cfj $FINALDIR/$BFILEN ${WORLD}_nether"
+BFILEE="${WORLD}_the_end.$STAMP.tar.bz2"
+CMDE="tar -cfj $FINALDIR/$BFILEE ${WORLD}_the_end"
 
 if [ $LOGIT -eq 1 ]
 then

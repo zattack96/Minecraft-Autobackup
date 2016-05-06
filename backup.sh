@@ -95,12 +95,12 @@ then
    echo "$(date +"%G-%m-%d %H:%M:%S") [LOG] Level-Name is $WORLD"
 fi
 
-BFILE="$WORLD.tar.gz"
-CMD="tar -czf $FINALDIR/$BFILE $WORLD"
-BFILEN="${WORLD}_nether.tar.gz"
-CMDN="tar -czf $FINALDIR/$BFILEN ${WORLD}_nether"
-BFILEE="${WORLD}_the_end.tar.gz"
-CMDE="tar -czf $FINALDIR/$BFILEE ${WORLD}_the_end"
+BFILE="$WORLD.tar.bz2"
+CMD="tar -cfj $FINALDIR/$BFILE $WORLD"
+BFILEN="${WORLD}_nether.tar.bz2"
+CMDN="tar -cfj $FINALDIR/$BFILEN ${WORLD}_nether"
+BFILEE="${WORLD}_the_end.tar.bz2"
+CMDE="tar -cfj $FINALDIR/$BFILEE ${WORLD}_the_end"
 
 if [ $LOGIT -eq 1 ]
 then
